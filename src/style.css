@@ -1,0 +1,329 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: 'Quantico', sans-serif;
+    background-image: url(img/pokemonBackground.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.backgroundCard{
+    background-image: url(img/back_pokemon2-02.png);
+    width: 360px;
+    height: 640px;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px; 
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap; 
+    height: 100%;
+}
+
+/* HEADER */
+.logo{
+    width: 57%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* SECC TOOLS 1*/
+
+#tools{
+    width: 100%;
+    height: 100%;
+}
+
+.toolsContainer{
+    margin: 1.5rem 0;
+    height: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.boxTools {
+    flex: 0 1 calc(50% - 1rem);
+}
+
+#order{
+    font-family: 'Quantico', sans-serif;
+    font-size: 9px;
+    position: absolute;
+    width: 64px;
+    height: 21px;
+    left: 30px;
+    top: auto;
+  
+    background: #EEEBEB;
+    border: 1px solid #B7B4B4;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+#search{
+    position: absolute;  
+    width: 200px;
+    height: 21px;
+    left: 111px;
+    top: auto;
+
+    background: #EEEBEB;
+    border: 1px solid #B7B4B4;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-family: 'Quantico', sans-serif;
+    font-size: 9px;
+}
+
+#searchIcon{
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    left: 315px;
+    top: auto;
+}
+
+/* SECC TOOLS 2*/
+
+.toolsFilterContainer{
+    margin: 1.5rem 0;
+    text-align: center;
+    /* position: absolute; */
+    width: 296px;
+    height: 130px;
+    left: 30px;
+    top: auto;
+
+    background: rgba(66, 66, 66, 0.15);
+    border-radius: 10px;
+}
+
+.boxToolsFilter {
+    margin: 1.5rem;
+}
+
+#category{
+    font-family: 'Quantico', sans-serif;
+    font-size: 9px;
+    position: absolute;
+    width: 172px;
+    height: 21px;
+    left: 84px;
+    top: auto;
+
+    background: #EEEBEB;
+    border: 1px solid #B7B4B4;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+/* SECC POKEMON*/
+
+/* #allPokemon{
+        width: 100%;
+        height: 100%;
+} */
+
+.cardPokemon{
+    margin: 1rem 0;
+    height: 100%; 
+    flex-basis: 100%; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+ /*    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around; */
+    
+} 
+
+.card{
+        /* position: absolute; */
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        width: 141px;
+        height: 141px;
+        left: 32px;
+        top: auto;
+        
+        flex: 0 1 calc(50% - 1rem);  
+        background-color:  rgba(66, 66, 66, 0.15);
+        border-radius: 10px;
+}
+
+.imgpokemon{    
+    width: 80px;
+    height: 80px;
+    display:block;
+    margin:auto
+}
+.styleh3{
+    height: 10px;
+/*     left: 41px;
+    top: 330px; */
+
+    font-family: Quantico;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 30px;
+    color: #000000;
+    text-align: center;
+}
+.strongStyle{
+    font-family: Quantico;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+}
+
+/* ID POKEMON*/
+
+.logoId{
+    position: absolute;
+    width:25%;
+    left: 234px;
+    top: 10px;
+    display: block;
+
+}
+
+#idBox{
+    color: white;
+    display: block;
+    text-align: right;
+    position: absolute;
+    top: 325px;
+    left: -25px;
+
+    transform: rotate(-90deg);
+}
+
+.IdP{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.idBoxAbout{
+    position: absolute;
+    width: 203px;
+    height: 59px;
+    left: 140px;
+    top: 60px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.idBoxImg{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 65px;
+    top: 163px;
+}
+
+.idImg{
+    width: 100%;
+}
+
+.idBoxdescription{
+    position: absolute; 
+    width: 125px;
+    height: 120px;
+    left: 210px;
+    top: 150px;
+
+    background: rgba(66, 66, 66, 0.15);
+    border-radius: 10px;
+}
+
+.descP{
+    padding: 1rem;
+    margin-left: 5%;
+    top: 25px;
+    width: 96px;
+    height: 16px;
+    font-size: 9px;
+}
+.desc2P{
+    
+    font-size: 9px;
+}
+
+.idfeaturesContainer{
+    position: absolute;
+    width: 240px;
+    height: 184px;
+    left: 115px;
+    top: 296px;
+
+    margin: 1.5rem 0;
+    height: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    
+    top: 296px;
+
+}
+
+.idBoxFeatures{
+    flex: 0 1 calc(50% - 1rem);
+}
+
+.modal{
+    /* position: absolute; */
+    width: 100px;
+    height: 30px;
+    left: 115px;
+    top: 314px;
+
+    background: #EEEBEB;
+    border: 1px solid #B7B4B4;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-family: 'Quantico', sans-serif;
+    font-size: 12px;
+}
+
+.imgpok{
+    width: 60px;
+    height: 60px;
+}
