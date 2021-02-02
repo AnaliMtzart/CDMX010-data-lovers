@@ -1,0 +1,230 @@
+/* Media Query de celulares gama alta*/
+@media only screen and (min-width:680px) {
+    html {
+        font-size: 13px;
+    }
+    .logo{
+        width: 45%;
+        
+    }
+
+    #order{
+        font-size: 18px;
+        position: absolute;
+        width: 9.5rem;
+        height: 3rem;
+        left: 5.4rem;
+    }
+    #search{
+          
+        width: 28rem;
+        height: 3rem;
+        left: 17.3rem;
+        font-size: 18px;
+    }
+    #searchIcon{
+        position: absolute;
+        width: 5.5%;
+        left: 46rem;
+        top: auto;
+    }
+    .toolsFilterContainer{
+        margin-top: 4rem;
+        width: 43.8rem;
+        height: 14.3rem;
+        left: 4rem;
+    
+    }
+    .toolsFilterContainer h3{
+        font-size: 24px;
+    }
+    .toolsFilterContainer label{
+        font-size: 18px;
+    }
+    #category{
+        font-size: 18px;
+        position: absolute;
+        width: 25rem;
+        height: 3rem;
+        left: 9rem;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    /* Media Query de tableta*/
+
+    html {
+        font-size: 14px;
+    }
+    
+    .logo{
+        width: 40%;
+        
+    }
+
+    #order{
+        font-size: 18px;
+        position: absolute;
+        width: 9.5rem;
+        height: 3rem;
+        left: 5.4rem;
+    }
+    #search{
+          
+        width: 28rem;
+        height: 3rem;
+        left: 17.3rem;
+        font-size: 18px;
+    }
+    #searchIcon{
+        position: absolute;
+        width: 5.5%;
+        left: 46rem;
+        top: auto;
+    }
+    .toolsFilterContainer{
+        margin-top: 4rem;
+        width: 43.8rem;
+        height: 14.3rem;
+        left: 5.5rem;
+    
+    }
+    .toolsFilterContainer h3{
+        font-size: 24px;
+    }
+    .toolsFilterContainer label{
+        font-size: 18px;
+    }
+    #category{
+        font-size: 18px;
+        position: absolute;
+        width: 25rem;
+        height: 3rem;
+        left: 9rem;
+    }
+}
+
+/* Media Query de laptop*/
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+    .logo{
+        width: 35%;
+        
+    }
+
+    #order{
+        font-size: 16px;
+        position: absolute;
+        width: 9rem;
+        height: 3.3rem;
+        left: 13rem;
+    }
+    #search{
+          
+        width: 28rem;
+        height: 3.3rem;
+        left: 23rem;
+        font-size: 16px;
+    }
+    #searchIcon{
+        position: absolute;
+        width: 3.8%;
+        left: 52rem;
+        top: auto;
+    }
+    .toolsFilterContainer{
+        margin-top: 3.5rem;
+        width: 48rem;
+        height: 10rem;
+        left: 8rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    
+    }
+    .toolsFilterContainer h3{
+        font-size: 24px;
+        margin-left: 14rem;
+        margin-top: 1rem;
+    }
+    .toolsFilterContainer label{
+        font-size: 20px;
+    }
+    #category{
+        font-size: 16px;
+        position: absolute;
+        width: 14rem;
+        height: 3rem;
+        left: 50rem;
+        margin-top: 4.5rem;
+    }
+    .radiobtn{
+        width: 20px;
+        height: 20px;
+    }
+   
+}
+
+/* Media Query de Desktop*/
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .logo{
+        width: 33%;
+        
+    }
+
+    #order{
+        font-size: 18px;
+        position: absolute;
+        width: 11rem;
+        height: 3.5rem;
+        left: 19.6rem;
+    }
+    #search{
+          
+        width: 32.5rem;
+        height: 3.5rem;
+        left: 33.5rem;
+        font-size: 18px;
+    }
+    #searchIcon{
+        position: absolute;
+        width: 4%;
+        left: 67.5rem;
+        top: auto;
+    }
+    .toolsFilterContainer{
+        margin-top: 4rem;
+        width: 63.8rem;
+        height: 12.6rem;
+        left: 13rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    
+    }
+    .toolsFilterContainer h3{
+        font-size: 28px;
+        margin-left: 20rem;
+    }
+    .toolsFilterContainer label{
+        font-size: 24px;
+    }
+    #category{
+        font-size: 18px;
+        position: absolute;
+        width: 19rem;
+        height: 3.5rem;
+        left: 36rem;
+        margin-top: 5rem;
+    }
+        
+    
+
+}
