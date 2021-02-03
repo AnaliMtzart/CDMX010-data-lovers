@@ -1,7 +1,5 @@
-import {setSingleCards, filterCard } from './data.js';
-//import {filterData} from './data.js';
+import {setSingleCards, filterCard} from './data.js';
 import data from './data/pokemon/pokemon.js';
-
 const pokemons = data.pokemon;
 
 const singlePokemonCard = (pokemon) => {

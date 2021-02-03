@@ -13,14 +13,12 @@ body {
     margin-top: -10px;
     margin-left: -8px;
     position: absolute;
-    
 }
 .circle{
     position: relative;
     width: 34%;
     margin-top: 13.5rem;
-    margin-left: 2.5rem;
-    
+    margin-left: 2.5rem; 
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Quantico', sans-serif;
@@ -39,9 +37,6 @@ h2{
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;  
-    /* height: 100%;
-    margin: 0 auto;
-    padding: 0 15px; */
 }
 /* HEADER */
 .logo{
@@ -50,7 +45,6 @@ h2{
     margin: 0 auto;
 }
 /* SECC TOOLS 1*/
-
 .toolsContainer{ /*elemento madre*/
     box-sizing: border-box;
     flex-basis: 100%;
@@ -59,11 +53,9 @@ h2{
     justify-content: center;
 }
 .boxTools {
-    /* flex: 0 1 calc(50% - 1rem); */
     box-sizing: border-box;
     margin: 1rem;
     align-content: center;
-    
 }
 #order{
     font-family: 'Quantico', sans-serif;
@@ -141,11 +133,12 @@ h2{
  /*    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around; */
+    align-content: space-around; */    
 } 
 .card{
         /* position: absolute; */
         margin-bottom: 10px;
+        padding-bottom: 10px;
         width: 141px;
         height: 141px;
         left: 32px;
@@ -162,8 +155,8 @@ h2{
 }
 .styleh3{
     height: 10px;
-    left: 41px;
-    top: 330px;
+/*     left: 41px;
+    top: 330px; */
     font-family: Quantico;
     font-style: normal;
     font-weight: normal;

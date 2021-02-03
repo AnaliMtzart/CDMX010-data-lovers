@@ -19,7 +19,6 @@ const pokemonCard = (pokemon) => {
     return component;
 }
 
-
 window.addEventListener('DOMContentLoaded', () => {
     const html = setCards(pokemons, pokemonCard);
     //const cardPokemon =document.querySelector("#cardPokemon");
@@ -85,7 +84,6 @@ const functOrder = () => {
 }
 
 document.querySelector('#order').addEventListener('change', functOrder);
-
 
 let selectCategory = (filter) => {
     const component =`

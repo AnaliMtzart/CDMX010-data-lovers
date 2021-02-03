@@ -55,7 +55,6 @@
         height: 3rem;
         left: 9rem;
     }
-
 }
 
 @media only screen and (min-width:768px) {
@@ -103,7 +102,6 @@
         width: 43.8rem;
         height: 14.3rem;
         left: 5.5rem;
-    
     }
     .toolsFilterContainer h3{
         font-size: 24px;
@@ -117,6 +115,23 @@
         width: 25rem;
         height: 3rem;
         left: 9rem;
+    }
+   .card {
+    width: 184px;
+    height: 184px;
+    flex: 0 1 calc(30% - 1rem);
+    }
+    .imgpokemon{    
+    width: 105px;
+    height: 105px;
+    }
+    .styleh3{
+    font-size: 13px;
+    line-height: 30px;
+    color: #000000;
+    }
+    .strongStyle{
+    font-size: 16px;
     }
 }
 
@@ -188,11 +203,11 @@
         width: 20px;
         height: 20px;
     }
-   
 }
 
 /* Media Query de Desktop*/
 @media only screen and (min-width: 1200px) {
+  
     html {
         font-size: 16px;
     }
@@ -255,7 +270,4 @@
         left: 36rem;
         margin-top: 5rem;
     }
-        
-    
-
 }
