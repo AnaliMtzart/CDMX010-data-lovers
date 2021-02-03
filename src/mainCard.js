@@ -1,6 +1,7 @@
 import {setSingleCards, filterCard} from './data.js';
 import data from './data/pokemon/pokemon.js';
 const pokemons = data.pokemon;
+
 const singlePokemonCard = (pokemon) => {
     const component = `
     <div id="cardsolo">
@@ -24,6 +25,7 @@ const singlePokemonCard = (pokemon) => {
     </div>    `;
     return component
 }
+
 window.addEventListener('DOMContentLoaded', () => {
     let numero = localStorage.getItem("idPokemon");
     let accordingNum=filterCard(pokemons,numero);

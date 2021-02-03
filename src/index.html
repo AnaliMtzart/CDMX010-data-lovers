@@ -9,53 +9,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
   <!--   -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-    <header>
-      <img src="img/Pokemon-Logo.png" alt="logo pokemon" class="logo">
-    </header>
-    <section id="tools" class="container">
-        <div class="toolsContainer">
-          <div class="boxTools">
-            <select name="select-order" id="order">
-              <option value="">ORDEN:</option>
-              <option value="nameAsc">A - Z</option>
-              <option value="nameDesc">Z - A</option>
-              <option value="numAsc">1 - 251</option>
-              <option value="numDesc">251 - 1</option>
-            </select>
-          </div>
-          <div class="boxTools">
-            <input type="text" placeholder="BUSCA TU POKÉMON FAVORITO!" id="search">
-            <input type="image" id="searchIcon" src="img/bx-search.svg" alt="Enviar">
-          </div>
-        </div>
-        <div class="toolsFilterContainer">
-          <div class="boxToolsFilter">
-            <h3 style="color:  #E3350D;">O BUSCA DE ACUERDO A:</h3>
-            <label>
-              <input type="radio" class="radiobtn" name="filters" id="type" value="type"> TIPO
-            </label>
-            <label>
-              <input type="radio" class="radiobtn" name="filters" id="weaknesses" value="weaknesses"> DEBILIDAD
-            </label>
-            <label>
-              <input type="radio" class="radiobtn" name="filters" id="resistant" value="resistant"> RESISTENCIA
-            </label>
-          </div>
-          <div class="boxToolsFilter">
-            <select name="select-category" id="category" size="1">
-            </select>
-          </div>
-        </div>
-    </section>
-    <section id="allPokemon">
-      <h2>POKÉDEX</h2>
-      <div class="container">
-        <div id="cardPokemon" class="cardPokemon"></div>
+  <header>
+    <img src="img/Pokemon-Logo.png" alt="logo pokemon" class="logo">
+  </header>
+  <section id="tools" class="container">
+    <div class="toolsContainer">
+      <div class="boxTools">
+        <select name="select-order" id="order">
+          <option value="">ORDEN:</option>
+          <option value="nameAsc">A - Z</option>
+          <option value="nameDesc">Z - A</option>
+          <option value="numAsc">1 - 251</option>
+          <option value="numDesc">251 - 1</option>
+        </select>
       </div>
-    </section>
+      <div class="boxTools">
+        <input type="text" placeholder="BUSCA TU POKÉMON FAVORITO!" id="search">
+        <input type="image" id="searchIcon" src="img/bx-search.svg" alt="Enviar">
+      </div>
+    </div>
+    <div class="toolsFilterContainer">
+      <div class="boxToolsFilter">
+        <h3 style="color:  #E3350D;">O BUSCA DE ACUERDO A:</h3>
+        <label>
+          <input type="radio" name="filters" id="type" value="type" class="radiobtn"> TIPO
+        </label>
+        <label>
+          <input type="radio" name="filters" id="weaknesses" value="weaknesses" class="radiobtn"> DEBILIDAD
+        </label>
+        <label>
+          <input type="radio" name="filters" id="resistant" value="resistant" class="radiobtn"> RESISTENCIA
+        </label>
+      </div>
+      <div class="boxToolsFilter">
+        <select name="select-category" id="category" size="1">
+        </select>
+      </div>
+    </div>
+  </section>
+  <section id="allPokemon">
+    <h2>POKÉDEX</h2>
+    <div class="container">
+      <div id="cardPokemon" class="cardPokemon"></div>
+    </div>
+  </section>
   <script src="main.js" type="module"></script>
 </body>
 </html>
