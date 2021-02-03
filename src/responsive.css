@@ -3,11 +3,18 @@
     html {
         font-size: 13px;
     }
-    .logo{
-        width: 45%;
-        
+    .redline{ 
+        margin-top: -9px;
+        margin-left: -8px;     
     }
-
+    .circle{   
+        width: 34%;
+        margin-top: 21.4rem;
+        margin-left: 6rem;    
+    }
+    .logo{
+        width: 45%;  
+    }
     #order{
         font-size: 18px;
         position: absolute;
@@ -62,7 +69,15 @@
         width: 40%;
         
     }
-
+    .redline{ 
+        margin-top: -9px;
+        margin-left: -8px;     
+    }
+    .circle{   
+        width: 34%;
+        margin-top: 21.4rem;
+        margin-left: 6rem;    
+    }
     #order{
         font-size: 18px;
         position: absolute;
@@ -110,9 +125,17 @@
     html {
         font-size: 15px;
     }
+    .redline{ 
+        width: 19%;
+        margin-top: -11px;   
+    }
+    .circle{   
+        width: 28%;
+        margin-top: 10rem;
+        margin-left: 2.8rem;    
+    }
     .logo{
         width: 35%;
-        
     }
 
     #order{
@@ -173,10 +196,18 @@
     html {
         font-size: 16px;
     }
+    .redline{ 
+        width: 19%;
+        margin-top: -11px;   
+    }
+    .circle{   
+        width: 23%;
+        margin-top: 16rem; 
+        margin-left: 6rem;   
+    }
     
     .logo{
-        width: 33%;
-        
+        width: 33%;  
     }
 
     #order{

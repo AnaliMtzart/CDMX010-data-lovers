@@ -7,10 +7,20 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-.backgroundCard{
-    background-image: url(img/back_pokemon2-02.png);
-    width: 360px;
-    height: 640px;
+.redline{
+    width: 28%;
+    height: 101%;
+    margin-top: -10px;
+    margin-left: -8px;
+    position: absolute;
+    
+}
+.circle{
+    position: relative;
+    width: 34%;
+    margin-top: 13.5rem;
+    margin-left: 2.5rem;
+    
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Quantico', sans-serif;

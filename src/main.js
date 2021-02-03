@@ -23,13 +23,11 @@ const pokemonCard = (pokemon) => {
 window.addEventListener('DOMContentLoaded', () => {
     const html = setCards(pokemons, pokemonCard);
     //const cardPokemon =document.querySelector("#cardPokemon");
-    //const cardPokemon = document.getElementById('cardPokemon');
     cardPokemon.innerHTML = html;
 });
 
 document.querySelector('#searchIcon').addEventListener('click', () => {
     let search = document.querySelector('#search').value;
-    //console.log('busca: ' + search);
     let accordingName = filterName(pokemons, search);
     const html = setCards(accordingName, pokemonCard);
     //let cardPokemon=document.querySelector("#cardPokemon");
@@ -88,13 +86,10 @@ const functOrder = () => {
 
 document.querySelector('#order').addEventListener('change', functOrder);
 
-//pokemonsRadio(pokemons);
-//console.log(pokemonsRadio(pokemons,'type'));
 
 let selectCategory = (filter) => {
     const component =`
     <option value="${filter}">${filter}</option>`
-    //console.log(component);
     return component;
 };
 
@@ -102,7 +97,6 @@ const buildSelect=(radio)=>{
     selectFilter = pokemonsRadio(pokemons,radio);
     console.log(selectFilter);
     const html = setSelect(selectFilter, selectCategory);
-    //console.log(selectCategory(selectFilter));
     const select = document.getElementById('category');
     select.innerHTML = html;
 }
@@ -136,72 +130,3 @@ window.addEventListener("load", function(event) {
         });
     }
 });
-/* primera prueba
-let idCard = document.getElementById("card");
-
-if(idCard){
-    console.log(idCard);
-    document.querySelector('.card').addEventListener('click', () => {
-    console.log("hola");
-});
-}
-
-window.addEventListener("load", function(event) {
-    document.querySelector('#card').addEventListener('click', () => {
-        location.href ="card.html";
-        let idPokemon=document.querySelector('#idPokemon').value;
-        console.log("hola" + idPokemon);
-        localStorage.setItem("idPokemon", idPokemon);
-    });
-  }); */
-
-//TARJETA INFO DE CADA POKEMON AL DARLE CLICL   
-  /*let pokeContainer = document.getElementById("cardPokemon");
-  pokeContainer.addEventListener("click", getAPokemon);
-  
-  function getAPokemon (e) {
-    //console.log('target ' + e.target);
-    console.log('target current' + e.target);
-      //if(e.target !== e.currentTarget){
-      if(e.target){
-          console.log('Hola');
-          let clickedItem = e.target.id;
-          console.log(clickedItem);
-           let getThisPokemon = pokemons.filter ((searchThisPokemon)=> searchThisPokemon.num === clickedItem);
-          console.log(e);
-          document.getElementById("singleCardPokemon").innerHTML = getThisPokemon.map(pokemons).join(''); 
-      }
-  }*/
-
- /*  //TARJETA INFO DE CADA POKEMON AL DARLE CLICL   
-  let pokeContainer = document.getElementById("cardPokemon");
-  pokeContainer.addEventListener ("click", getAPokemon);
-  
-  function getAPokemon (e) {
-    //console.log('target ' + e.target);
-    console.log('target current' + e.currentTarget);
-      //if(e.target !== e.currentTarget){
-      if(e.currentTarget){
-          console.log('Hola');
-          let clickedItem = e.target.id;
-          console.log(clickedItem);
-          /* let getThisPokemon = pokemons.filter ((searchThisPokemon)=> searchThisPokemon.num === clickedItem);
-          console.log(e);
-          document.getElementById("singleCardPokemon").innerHTML = getThisPokemon.map(pokemons).join(''); 
-      }
-  } */
-
-
-
-
-
-
-
-//console.log(selectCategory(selectFilter));
-
-//let types=filterType(pokemons);
-
-//sortData(pokemons,'name','nameAsc');
-//sortData(pokemons,pokemons.name,"nameAsc");
-
-//filterWeakness(pokemons,'ice'); 
