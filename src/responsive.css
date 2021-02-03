@@ -31,8 +31,7 @@
 }
 .strongStyle{
     font-size: 16px;
-  
-}
+  }
 
 /* Media Query de laptop*/
 @media only screen and (min-width: 992px) {
