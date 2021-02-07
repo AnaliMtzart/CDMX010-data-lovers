@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <!-- agregar para responsive -->
@@ -12,23 +11,17 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css">
 </head>
-
 <body>
-
     <img src="img/redline2.png" alt="redline" class="redline">
     <img src="img/circle.png" alt="circle" class="circle">
-    
     <header>
-        <img src="img/Pokemon-Logo.png" alt="logo pokemon" class="logoId">
+        <img src="img/Pokemon-Logo.png" alt="logo pokemon" class="logoId" onclick="history.back(-1);">
     </header>
-
     <section id="idPokemon">
         <div class="container">
             <div id="singleCardPokemon"></div>
         </div>
     </section>
-    
     <script src="mainCard.js" type="module"></script>
 </body>
-
 </html>

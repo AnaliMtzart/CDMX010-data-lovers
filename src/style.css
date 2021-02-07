@@ -13,14 +13,12 @@ body {
     margin-top: -10px;
     margin-left: -8px;
     position: absolute;
-    
 }
 .circle{
     position: relative;
     width: 34%;
     margin-top: 13.5rem;
-    margin-left: 2.5rem;
-    
+    margin-left: 2.5rem; 
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Quantico', sans-serif;
@@ -39,9 +37,6 @@ h2{
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;  
-    /* height: 100%;
-    margin: 0 auto;
-    padding: 0 15px; */
 }
 /* HEADER */
 .logo{
@@ -50,7 +45,6 @@ h2{
     margin: 0 auto;
 }
 /* SECC TOOLS 1*/
-
 .toolsContainer{ /*elemento madre*/
     box-sizing: border-box;
     flex-basis: 100%;
@@ -59,11 +53,9 @@ h2{
     justify-content: center;
 }
 .boxTools {
-    /* flex: 0 1 calc(50% - 1rem); */
     box-sizing: border-box;
     margin: 1rem;
     align-content: center;
-    
 }
 #order{
     font-family: 'Quantico', sans-serif;
@@ -141,11 +133,12 @@ h2{
  /*    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around; */
+    align-content: space-around; */    
 } 
 .card{
         /* position: absolute; */
         margin-bottom: 10px;
+        padding-bottom: 10px;
         width: 141px;
         height: 141px;
         left: 32px;
@@ -162,8 +155,8 @@ h2{
 }
 .styleh3{
     height: 10px;
-    left: 41px;
-    top: 330px;
+/*     left: 41px;
+    top: 330px; */
     font-family: Quantico;
     font-style: normal;
     font-weight: normal;
@@ -180,100 +173,112 @@ h2{
     line-height: 17px;
     text-align: center;
 }
-/* ID POKEMON*/
+/* ID POKEMON ind*/
 .logoId{
     position: absolute;
     width:25%;
-    left: 234px;
+    left: 20rem;
     top: 10px;
     display: block;
 }
 #idBox{
-    color: white;
+    box-sizing: content-box;
     display: block;
-    text-align: right;
     position: absolute;
-    top: 325px;
-    left: -25px;
+    top: 26rem;
+    left: 0.5rem;
     transform: rotate(-90deg);
 }
-.IdP{
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
+#idBox p{
+    font-size: 15px;
+    text-align: right;
+    color: white;
 }
 .idBoxAbout{
     position: absolute;
-    width: 203px;
-    height: 59px;
-    left: 140px;
-    top: 60px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 16px;
+    box-sizing: content-box;
+    width: 17rem;
+    left: 10rem;
+    top: 5rem;
+    font-size: 10px;
+    text-align: justify;
 }
-.idBoxImg{
+.imgOne{
     position: absolute;
-    width: 96px;
-    height: 96px;
-    left: 65px;
-    top: 163px;
-}
-.idImg{
-    width: 100%;
+    width: 23%;
+    left: 4.7rem;
+    top:15.5rem;
 }
 .idBoxdescription{
-    position: absolute; 
-    width: 125px;
-    height: 120px;
-    left: 210px;
-    top: 150px;
+    position: absolute;
+    box-sizing: border-box; 
+    width: 10.5rem;
+    left:15.3rem;
+    top: 15rem;
     background: rgba(66, 66, 66, 0.15);
     border-radius: 10px;
 }
-.descP{
+.idBoxdescription p{
+    font-size: 9px;
     padding: 1rem;
-    margin-left: 5%;
-    top: 25px;
-    width: 96px;
-    height: 16px;
-    font-size: 9px;
 }
-.desc2P{
-    font-size: 9px;
-}
-.idfeaturesContainer{
+.titlebtn{
     position: absolute;
-    width: 240px;
-    height: 184px;
-    left: 115px;
-    top: 296px;
-    margin: 1.5rem 0;
-    height: 100%;
-    flex-basis: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    top: 296px;
-}
-.idBoxFeatures{
-    flex: 0 1 calc(50% - 1rem);
-}
-.modal{
-    /* position: absolute; */
-    width: 100px;
-    height: 30px;
-    left: 115px;
-    top: 314px;
-    background: #EEEBEB;
-    border: 1px solid #B7B4B4;
-    box-sizing: border-box;
-    border-radius: 15px;
-    font-family: 'Quantico', sans-serif;
-    font-size: 12px;
-}
-.imgpok{
-    width: 60px;
-    height: 60px;
-}
+    padding:5px;  
+    background-color: rgba(66, 66, 66, 0.15);
+    width:12.5rem;
+    font-size:12px;
+    font-weight:bold;
+    left: 12.5rem;
+    top: 26.6rem;
+  }
+  .showbtn{
+    float:right;
+    font-size:12px;
+    line-height:20px;
+    color:#E3350D;
+  }
+  #info{
+    position: absolute;
+    clear:both;
+    border:2px solid #e6e6e6;
+    margin-top:4.9rem;
+    left: 12.5rem;
+    padding:1rem;
+    width:11rem;
+    overflow:auto;
+    font-size:10px;
+    text-align: justify;
+    background-color: white;
+    z-index: 99;
+  }
+
+  .titlebtn2{
+    position: absolute;
+    padding:5px;  
+    background-color: rgba(66, 66, 66, 0.15);
+    width:12.5rem;
+    font-size:8px;
+    font-weight:bold;
+    left: 12.5rem;
+    top: 30rem;
+  }
+  .showbtn2{
+    float:right;
+    font-size:12px;
+    line-height:20px;
+    color:#E3350D;
+  }
+  #info2{
+    position: absolute;
+    clear:both;
+    border:2px solid #e6e6e6;
+    margin-top:8.3rem;
+    left: 12.5rem;
+    padding:5px;
+    width:12.2rem;
+    overflow:auto;
+    font-size:10px;
+    text-align: justify;
+    background-color: white;
+  }

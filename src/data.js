@@ -18,7 +18,6 @@ export const filterName = (pokemons, name) => {
 export const filterCategory = (pokemons, option,radio) => {
   const accordinCategory = pokemons.filter(pokemon => {
     for (const i in pokemon[radio]) {
-      
       if (pokemon[radio][i] === option) {
         return pokemon;
       }
@@ -49,7 +48,6 @@ export const sortData = (pokemons, sortBy, sortOrder) => {
       const numAsc=pokemons.sort((a, b) => a.num - b.num);
       return numAsc;
     }
-
 }
 
 export const pokemonsRadio=(pokemons,radio)=>{
@@ -79,7 +77,7 @@ export const filterCard = (pokemons, num) => {
   return accordingNum;
 }
 
-export const setSingleCards = (pokemons, singlePokemonCard) => {
+ export const setSingleCards = (pokemons, singlePokemonCard) => {
   let html = '';
   pokemons.forEach(pokemon => {
     html += singlePokemonCard(pokemon);
