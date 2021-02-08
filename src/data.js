@@ -12,7 +12,6 @@ export const filterName = (pokemons, name) => {
       return pokemon
     }
   });
-  console.log(accordingName);
   return accordingName;
 }
 export const filterCategory = (pokemons, option,radio) => {
@@ -73,7 +72,6 @@ export const filterCard = (pokemons, num) => {
       return pokemon
     }
   });
-  console.log(accordingNum);
   return accordingNum;
 }
 
@@ -84,3 +82,57 @@ export const filterCard = (pokemons, num) => {
   });
   return html;
 }
+
+export const evolutions=(pokemons,numero)=>{
+  let evolutions=null;
+  pokemons.forEach(pokemon=>{
+    if(pokemon['num']===numero){
+      if(pokemon.evolution["next-evolution"]){
+        //console.log(pokemon.evolution["next-evolution"])
+        evolutions = pokemon.evolution["next-evolution"];
+        //console.log(evolutions['next-evolution']);
+      }else{
+        evolutions = 0;
+        //console.log("No tiene evolucion");
+      }
+    }
+  }); 
+  return evolutions;
+}  
+
+export const setEvolutions = (evolutionsPokemon, buildEvolution) => {
+  //console.log("set evolutions"+evolutionsPokemon);
+  let html = '';
+  evolutionsPokemon.forEach(evolution => {
+    html += buildEvolution(evolution);
+  });
+  return html;
+}
+
+/* export const preEvolutions=(pokemons,numero)=>{
+  console.log(numero);
+  let evolutions=null;
+  pokemons.forEach(pokemon=>{
+    if(pokemon['num']===numero){
+      if(pokemon.evolution["prev-evolution"]){
+        //console.log(pokemon.evolution["next-evolution"])
+        evolutions = pokemon.evolution["prev-evolution"];
+        //console.log(evolutions['next-evolution']);
+      }else{
+        evolutions = 0;
+        //console.log("No tiene evolucion");
+      }
+    }
+  }); 
+  return evolutions;
+}  */
+
+export const setPreEvolutions = (evolutionsPokemon, buildPreEvolution) => {
+  //console.log("set evolutions"+evolutionsPokemon);
+  let html = '';
+  evolutionsPokemon.forEach(evolution => {
+    html += buildPreEvolution(evolution);
+  });
+  return html;
+}
+
