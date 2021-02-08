@@ -74,7 +74,7 @@
     }
     .circle{   
         width: 34%;
-        margin-top: 21.4rem;
+        margin-top: 24rem;
         margin-left: 6rem;    
     }
     #order{
@@ -133,6 +133,79 @@
     .strongStyle{
     font-size: 16px;
     }
+    /* Estilos tarjeta Ind */
+    .logoId{
+        width:27%;
+        left: 35rem;
+        top: 1rem;
+    }
+    #idBox{
+        top: 46rem;
+        left: -0.7rem;
+        transform: rotate(-90deg);
+    }
+    #idBox p{
+        margin: 0;
+        font-size: 35px;
+    }
+    .idBoxAbout{
+        width: 29rem;
+        left: 20.5rem;
+        top: 9rem;
+        font-size: 22px;
+    }
+    .imgOne{
+        width: 25%;
+        left: 8.8rem;
+        top:27rem;
+    }
+    .idBoxdescription{ 
+        width: 18.5rem;
+        left:30rem;
+        top: 27rem;
+    }
+    .idBoxdescription p{
+        font-size: 18px;
+        padding: 2rem;
+    }
+    .titlebtn{
+        padding:10px;  
+        width:25rem;
+        font-size:24px;
+        left: 22.1rem;
+        top: 46.4rem;
+      }
+      .showbtn{
+        font-size:24px;
+        line-height:27px;
+        color:#E3350D;
+      }
+      #info{
+        margin-top:7rem;
+        left: 22rem;
+        padding:2rem;
+        width:22.2rem;
+        font-size:20px;
+      }
+      .titlebtn2{
+        padding:10px;  
+        width:25rem;
+        font-size:24px;
+        left: 22.1rem;
+        top: 51.5rem;
+      }
+      .showbtn2{
+        font-size:24px;
+        line-height:27px;
+        color:#E3350D;
+      }
+      #info2{
+        margin-top:12.1rem;
+        left: 22rem;
+        padding:2rem;
+        width:22.1rem;
+        font-size:20px;
+      }
 }
 
 /* Media Query de laptop*/
@@ -270,4 +343,79 @@
         left: 36rem;
         margin-top: 5rem;
     }
+    /* Estilos tarjeta Ind */
+    .logoId{
+        width:17%;
+        left: 70rem;
+        top: 1rem;
+    }
+    #idBox{
+        top: 45rem;
+        left: 0.5rem;
+        transform: rotate(-90deg);
+        top: 40rem;
+    }
+    #idBox p{
+        margin: 0;
+        font-size: 40px;
+       
+    }
+    .idBoxAbout{
+        width: 46rem;
+        left: 33rem;
+        top: 9rem;
+        font-size: 25px;
+    }
+    .imgOne{
+        width: 15%;
+        left: 10rem;
+        top:20rem;
+    }
+    .idBoxdescription{ 
+        width: 16rem;
+        left:32.5rem;
+        top: 22.5rem;
+    }
+    .idBoxdescription p{
+        font-size: 20px;
+        padding: 2rem;
+    }
+    .titlebtn{
+        padding:10px;  
+        width:25rem;
+        font-size:24px;
+        left: 55rem;
+        top: 26rem;
+      }
+      .showbtn{
+        font-size:24px;
+        line-height:27px;
+        color:#E3350D;
+      }
+      #info{
+        margin-top:-7.7rem;
+        left: 55rem;
+        padding:2rem;
+        width:22.2rem;
+        font-size:20px;
+      }
+      .titlebtn2{
+        padding:10px;  
+        width:25rem;
+        font-size:24px;
+        left: 55rem;
+        top: 32rem;
+      }
+      .showbtn2{
+        font-size:24px;
+        line-height:27px;
+        color:#E3350D;
+      }
+      #info2{
+        margin-top:-2rem;
+        left: 55rem;
+        padding:2rem;
+        width:22.1rem;
+        font-size:20px;
+      }
 }
