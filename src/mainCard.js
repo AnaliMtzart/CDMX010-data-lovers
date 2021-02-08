@@ -1,8 +1,10 @@
 import {setSingleCards, filterCard,evolutions,setEvolutions,setPreEvolutions} from './data.js';
 import data from './data/pokemon/pokemon.js';
 const pokemons = data.pokemon;
+
 let numero = null;
 let accordingNum=null;
+
 
 const singlePokemonCard = (pokemon) => {
     const component = `

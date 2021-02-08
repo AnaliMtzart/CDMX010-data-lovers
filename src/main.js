@@ -1,10 +1,13 @@
 import { setCards, filterName, sortData, pokemonsRadio, setSelect,filterCategory} from './data.js';
 //import {filterData} from './data.js';
 import data from './data/pokemon/pokemon.js';
+//console.log(example, data);
+
 const pokemons = data.pokemon;
 let selectFilter = null;
 let radio=null;
 let accordinCategory=null;
+
 const pokemonCard = (pokemon) => {
     const component = `
     <div class="card" id="card">
@@ -15,20 +18,21 @@ const pokemonCard = (pokemon) => {
     </div>`
     return component;
 }
+
 window.addEventListener('DOMContentLoaded', () => {
     const html = setCards(pokemons, pokemonCard);
     //const cardPokemon =document.querySelector("#cardPokemon");
-    //const cardPokemon = document.getElementById('cardPokemon');
     cardPokemon.innerHTML = html;
 });
+
 document.querySelector('#searchIcon').addEventListener('click', () => {
     let search = document.querySelector('#search').value;
-    //console.log('busca: ' + search);
     let accordingName = filterName(pokemons, search);
     const html = setCards(accordingName, pokemonCard);
     //let cardPokemon=document.querySelector("#cardPokemon");
     cardPokemon.innerHTML = html;
 });
+
 const functCategory = ()=>{
     let option = document.querySelector('#category').value;
     console.log('seleccionaste ' + option)
@@ -38,7 +42,9 @@ const functCategory = ()=>{
     //let cardPokemon=document.querySelector("#cardPokemon");
     cardPokemon.innerHTML = html;
 } 
+
 document.querySelector('#category').addEventListener('change',functCategory);
+
 const functOrder = () => {
     let option = document.querySelector('#order').value;
     let data=null;
@@ -48,6 +54,7 @@ const functOrder = () => {
     }else{
         data=pokemons;
     }
+    
     switch (option) {
         case 'nameAsc':
             let nameAsc = sortData(data, 'name', 'nameAsc');
@@ -75,48 +82,49 @@ const functOrder = () => {
             break;
     }
 }
+
 document.querySelector('#order').addEventListener('change', functOrder);
-//pokemonsRadio(pokemons);
-//console.log(pokemonsRadio(pokemons,'type'));
+
 let selectCategory = (filter) => {
     const component =`
     <option value="${filter}">${filter}</option>`
-    //console.log(component);
     return component;
 };
+
 const buildSelect=(radio)=>{
     selectFilter = pokemonsRadio(pokemons,radio);
     console.log(selectFilter);
     const html = setSelect(selectFilter, selectCategory);
-    //console.log(selectCategory(selectFilter));
     const select = document.getElementById('category');
     select.innerHTML = html;
 }
+
 document.querySelector('#type').addEventListener('click', () => {
     radio=document.querySelector('#type').value;
     buildSelect(radio);
 });
+
 document.querySelector('#weaknesses').addEventListener('click', () => {
     radio=document.querySelector('#weaknesses').value;
     buildSelect(radio);
 });
+
 document.querySelector('#resistant').addEventListener('click', () => {
     radio=document.querySelector('#resistant').value;
     buildSelect(radio);
 });
- window.addEventListener("load", function(event) {
+
+window.addEventListener("load", function(event) {
     const cards = document.getElementsByClassName('card');
     let pokemonsInputs = [];
     pokemons.forEach(pokemon => {
         pokemonsInputs.push(document.getElementById(pokemon.num));  
     });
-    
     for ( let i = 0; i < cards.length; i++) {
         cards[i].addEventListener('click', () => {
             let idPokemon= pokemonsInputs[i].value;
             localStorage.setItem("idPokemon", idPokemon);
             location.href ="card.html";
         });
-
     }
 });

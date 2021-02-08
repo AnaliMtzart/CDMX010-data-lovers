@@ -135,3 +135,4 @@ export const setPreEvolutions = (evolutionsPokemon, buildPreEvolution) => {
   });
   return html;
 }
+
