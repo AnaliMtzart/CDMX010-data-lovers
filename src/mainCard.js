@@ -1,6 +1,10 @@
-import { setSingleCards, filterCard } from './data.js';
+import {setSingleCards, filterCard,evolutions,setEvolutions,setPreEvolutions} from './data.js';
 import data from './data/pokemon/pokemon.js';
 const pokemons = data.pokemon;
+
+let numero = null;
+let accordingNum=null;
+
 
 const singlePokemonCard = (pokemon) => {
     const component = `
@@ -37,6 +41,7 @@ const singlePokemonCard = (pokemon) => {
                 "max-hp": ${pokemon.stats['max-hp']}<br>
             </p>
         </div>
+
         <div class="titlebtn2">
             ENCOUNTER
             <a style='cursor: pointer;' id="window2"
@@ -48,17 +53,25 @@ const singlePokemonCard = (pokemon) => {
             "base-capture-rate": ${pokemon.encounter['base-capture-rate']}
             </p>
         </div> 
+
+        <div id="divEvolutions">
+            eeeee
+        </div>
+
     </div>    `;
     return component
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    let numero = localStorage.getItem("idPokemon");
-    let accordingNum = filterCard(pokemons, numero);
+
+    numero = localStorage.getItem("idPokemon");
+    accordingNum=filterCard(pokemons,numero);
+
     const html = setSingleCards(accordingNum, singlePokemonCard);
     singleCardPokemon.innerHTML = html;
+    preEvolutions();
+    nextEvolutionts();
 });
-
 
 let infoButton = null;
 let infoButton2 = null;
@@ -90,4 +103,85 @@ window.onload = function () {/*hace que se cargue la función lo que predetermin
 }
 
 
+const nextEvolutionts=()=>{
+    let evolutionsPokemon=evolutions(accordingNum,numero);
+    //console.log(evolutionsPokemon);
+    if(evolutionsPokemon===0){
+        console.log("no hay evoluciones");
+    }else{
+        const htmlEvolutions= setEvolutions(evolutionsPokemon, buildEvolution);
+        idEvolution.innerHTML = htmlEvolutions;
+        
+        //buildEvolution(evolutionsPokemon);
+    }
+}
 
+const buildEvolution = (evolution) => {
+    let component = `
+    <div class="evolutions">
+        <p>Next Evolution:<br>
+        N.º${evolution.num}<br>
+        Name:${evolution.name}<br>
+        candy-cost: ${evolution['candy-cost']}<br>
+        </p>
+    </div>     
+        `;
+     if(evolution["next-evolution"]){
+        let others=evolution["next-evolution"];
+        others.forEach(other=>{
+            component += `
+            <div class="evolutions">
+                <p>Next Evolution:<br>
+                N.º${other.num}<br>
+                Name:${other.name}<br>
+                candy-cost: ${other['candy-cost']}<br>
+                </p>
+            </div>     
+        `;
+        }); 
+    } 
+    return component
+}
+
+const preEvolutions=()=>{
+    let evolutions=null;
+    pokemons.forEach(pokemon=>{
+        if(pokemon['num']===numero){
+        if(pokemon.evolution["prev-evolution"]){
+            evolutions = pokemon.evolution["prev-evolution"];
+            const htmlEvolutions= setPreEvolutions(evolutions, buildPreEvolution);
+            idEvolution.innerHTML = htmlEvolutions;
+        }else{
+            evolutions = 0;
+        }
+        }
+    });  
+}
+
+const buildPreEvolution = (evolution) => {
+    let component = `
+    <div class="evolutions">
+        <p>Previous Evolution:<br>
+        N.º${evolution.num}<br>
+        Name:${evolution.name}<br>
+        candy-cost: ${evolution['candy-cost']}<br>
+        </p>
+    </div>     
+        `;
+     if(evolution["prev-evolution"]){
+        let others=evolution["prev-evolution"];
+        others.forEach(other=>{
+            console.log(other.num);
+            component += `
+            <div class="evolutions">
+                <p>Previous Evolution:<br>
+                N.º${other.num}<br>
+                Name:${other.name}<br>
+                candy-cost: ${other['candy-cost']}<br>
+                </p>
+            </div>     
+        `;
+        }); 
+    } 
+    return component
+}
